@@ -17,6 +17,7 @@
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "emotion-theming": "^11.0.0",
     "framer-motion": "^3.5.2",
     "next": "10.0.7",
