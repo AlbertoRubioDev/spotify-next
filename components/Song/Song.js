@@ -1,7 +1,4 @@
-import React, {useContext} from "react";
-//import useQueueSong from "../../hooks/useQueueSong";
-import useChat from "../../hooks/useChat";
-import {AuthContext} from "../../context/context";
+import React from "react";
 import {
   Button,
   Tr,
@@ -9,9 +6,7 @@ import {
 } from "@chakra-ui/react"
 
 const Song = props => {
-  const authContext = useContext(AuthContext);
   const { uri, name, artist, sendMessage, ...other } = props;
-  //const [queueSong] = useQueueSong(uri);
 
   if (name) 
   return (

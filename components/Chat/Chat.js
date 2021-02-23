@@ -1,11 +1,10 @@
 import React, {useContext, useEffect} from "react";
-import useChat from "../../hooks/useChat";
 import {AuthContext} from "../../context/context";
 import { Textarea, Button, Box } from "@chakra-ui/react"
 
 
 const ChatRoom = ({ messages, sendMessage }) => {
-  const { roomId } = 1; // Gets roomId from URL
+  const roomId  = 1; // Gets roomId from URL
   const [newMessage, setNewMessage] = React.useState(""); // Message to be sent
   const authContext = useContext(AuthContext);
 
