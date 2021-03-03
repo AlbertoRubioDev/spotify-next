@@ -5,7 +5,7 @@ import { Container, Stack } from "@chakra-ui/react";
 import ChatContainer from "../ChatContainer";
 
 
-const Sheet = () => {
+const Sheet = ({roomId}) => {
 
   const [loggedIn, setLoggedIn] = useState(false); 
   
@@ -21,7 +21,7 @@ const Sheet = () => {
       <Container maxW="3xl">
         <Stack spacing={4}>
           <Authentication />
-          <ChatContainer />
+          <ChatContainer roomId={roomId} />
         </Stack>
       </Container>
     </AuthContext.Provider>
